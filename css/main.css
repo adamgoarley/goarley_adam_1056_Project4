@@ -1,3 +1,84 @@
 @charset "utf-8";
 /* CSS Document */
 
+.hidden
+{
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  /*display: flex;
+  flex-direction: row;
+  /*flex-wrap: nowrap;
+  flex-wrap: wrap;*/
+  max-width: 1140px;
+}
+
+.column {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+}
+
+.column1
+{
+  background-color: blue;
+  width: 641px;
+  height: 400px;
+
+}
+
+.column2
+{
+  background-color: purple;
+  width: 641px;
+  height: 400px;
+
+}
+
+.column3
+{
+  background-color: gray;
+  width: 641px;
+  height: 400px;
+
+}
+
+.column4
+{
+  background-color: brown;
+  width: 641px;
+  height: 400px;
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+  .column3
+  {
+    display: none;
+  }
+
+  .column4
+  {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 641px) {
+
+  .container
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+}
